@@ -68,11 +68,13 @@ const PanelPerfil = ({usuarioAutenticado}) => {
                                 <Tab.Pane eventKey="mis-compras">
                                     <div class="panel panel-default">
                                         <div class="panel-body">Mis compras</div>
+                                        {usuarioAutenticado.nombre}
                                     </div>
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="informacion-personal">
                                     <div class="panel panel-default">
                                         <div class="panel-body">Información personal</div>
+                                        {usuarioAutenticado.email}
                                     </div>
                                 </Tab.Pane>
                             </Tab.Content>
