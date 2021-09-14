@@ -6,6 +6,17 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### packages to install
+
+- react-bootstrap-icons -> https://icons.getbootstrap.com/
+- react-redux
+- react-router-dom
+- redux
+- redux-thunk
+- thunk
+- npm install react-bootstrap@next bootstrap@5.1.0
+
+
 ### `yarn start`
 
 Runs the app in the development mode.\
