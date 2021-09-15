@@ -3,8 +3,10 @@ import * as Icon from 'react-bootstrap-icons';
 import {Tab, Nav} from 'react-bootstrap';
 import EditarCuenta from './EditarCuenta';
 import CrearLibro from './CrearLibro';
+import ListBooks from './layouts/ListBooks';
 
 const PanelPerfil = ({usuarioAutenticado}) => {
+    
     return ( 
         <div className="col-md-12">
             <div className="row">
@@ -87,7 +89,33 @@ const PanelPerfil = ({usuarioAutenticado}) => {
                                             <div className="panel-heading">
                                                 Mis compras:
                                             </div> 
-                                            {usuarioAutenticado.nombre}     
+                                            <ListBooks 
+                                    
+                                            />     
+                                        </div>
+                                    </div>
+                                </Tab.Pane>
+                                <Tab.Pane eventKey="mis-libros">
+                                    <div className="panel panel-default">
+                                        <div className="panel-body">
+                                            <div className="panel-heading">
+                                                Mis libros:
+                                            </div> 
+                                            <ListBooks 
+                                    
+                                            />     
+                                        </div>
+                                    </div>
+                                </Tab.Pane>
+                                <Tab.Pane eventKey="libros-vendidos">
+                                    <div className="panel panel-default">
+                                        <div className="panel-body">
+                                            <div className="panel-heading">
+                                                Libros vendidos:
+                                            </div> 
+                                            <ListBooks 
+                                    
+                                            />     
                                         </div>
                                     </div>
                                 </Tab.Pane>

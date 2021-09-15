@@ -1111,3 +1111,40 @@ color: #fff;
   padding: 15px;
 }
 
+.single-book{
+  width: 100%;
+  padding: 1.5rem;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #eee;
+  overflow: hidden;
+}
+
+.img-single-book{
+  width: 15%;
+  float: left;
+}
+
+.img-single-book img{
+  width: 100% !important;
+}
+
+.details-single-book{
+  width: 85%;
+  float: left;
+  padding-top: 9px;
+}
+
+.details-single-book p, .details-single-book small{
+  margin: 0;
+  padding-left: 15px;
+  line-height: 1.6;
+}
+
+.details-single-book small{
+  color: #ced4da;
+}
+
+.details-single-book p:last-child{
+  font-weight: bold;
+}
+

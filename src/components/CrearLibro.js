@@ -20,7 +20,7 @@ const CrearLibro = () => {
     const datosImagenes = e => {
         guardarLibro({
             ...libro,
-            portada:e.target.files[0]
+            portada: e.target.files[0]
         })
     }
 

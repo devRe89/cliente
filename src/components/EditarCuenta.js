@@ -1,6 +1,5 @@
 import React, {Fragment, useState, useEffect} from 'react';
 
-
 const EditarCuenta = ({usuario}) => {
     
     const [usuarioEditar, guardarEdicion] = useState({
