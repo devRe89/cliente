@@ -6,16 +6,24 @@ import Perfil from "./components/Perfil";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 
+// Reducer
+
+import store from './store';
+import { Provider } from 'react-redux';
+
+
 function App() {
   return (
     <Router>
-      <Header />
-      <Switch>
-        <Route exact path="/" component={Inicio} />
-        <Route exact path="/login" component={Login} />
-        <Route exact path="/inicio-sesion" component={Registro} />
-        <Route exact path="/mi-cuenta" component={Perfil} />
-      </Switch>
+      <Provider store={store}>  
+        <Header />
+        <Switch>
+          <Route exact path="/" component={Inicio} />
+          <Route exact path="/login" component={Login} />
+          <Route exact path="/inicio-sesion" component={Registro} />
+          <Route exact path="/mi-cuenta" component={Perfil} />
+        </Switch>
+      </Provider>  
     </Router>
   );
 }
