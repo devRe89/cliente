@@ -1,14 +1,16 @@
-import React from 'react';
+import React, {useState} from 'react';
 import PanelPerfil from './PanelPerfil';
 
 
 const Perfil = () => {
-    const usuarioAutenticado = {
-        nombre: "rene",
+    const [usuarioAutenticado, guardarUsuario] = useState({
+        nombre: "Arturo",
         email: "rene@rene.com",
-        tipo: "Normal",
-        nickname: "arturo89"
-    };
+        tipo: "Vendedor",
+        nickname: "arturo89",
+        password: "12345",
+        confirmar: "12345",
+    });
 
     return ( 
         <div className="content-panel-perfil">

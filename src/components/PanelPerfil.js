@@ -1,6 +1,8 @@
 import React from 'react';
 import * as Icon from 'react-bootstrap-icons';
-import {Tab, Nav} from 'react-bootstrap'
+import {Tab, Nav} from 'react-bootstrap';
+import EditarCuenta from './EditarCuenta';
+import CrearLibro from './CrearLibro';
 
 const PanelPerfil = ({usuarioAutenticado}) => {
     return ( 
@@ -65,16 +67,40 @@ const PanelPerfil = ({usuarioAutenticado}) => {
                     <div className="col-lg-9 col-12 mt--30 mt-lg--0">
                         <div className="tab-content" id="myaccountContent">
                             <Tab.Content>
-                                <Tab.Pane eventKey="mis-compras">
-                                    <div class="panel panel-default">
-                                        <div class="panel-body">Mis compras</div>
-                                        {usuarioAutenticado.nombre}
+                                <Tab.Pane eventKey="informacion-personal">
+                                    <div className="panel panel-default">
+                                        <div className="panel-body">
+                                            <div className="panel-heading">
+                                                Información personal:
+                                            </div>
+                                            <div className="row">
+                                                <EditarCuenta 
+                                                    usuario={usuarioAutenticado}
+                                                />
+                                            </div>
+                                        </div>
                                     </div>
                                 </Tab.Pane>
-                                <Tab.Pane eventKey="informacion-personal">
-                                    <div class="panel panel-default">
-                                        <div class="panel-body">Información personal</div>
-                                        {usuarioAutenticado.email}
+                                <Tab.Pane eventKey="mis-compras">
+                                    <div className="panel panel-default">
+                                        <div className="panel-body">
+                                            <div className="panel-heading">
+                                                Mis compras:
+                                            </div> 
+                                            {usuarioAutenticado.nombre}     
+                                        </div>
+                                    </div>
+                                </Tab.Pane>
+                                <Tab.Pane eventKey="subir-libro">
+                                    <div className="panel panel-default">
+                                        <div className="panel-body">
+                                            <div className="panel-heading">
+                                                Subir un libro:
+                                            </div> 
+                                            <CrearLibro
+                                            
+                                            />   
+                                        </div>
                                     </div>
                                 </Tab.Pane>
                             </Tab.Content>

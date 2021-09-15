@@ -11,11 +11,11 @@ const Registro = () => {
                             <h4 className="login-title">Crear una cuenta</h4>
                             <div className="row">
                                 <div className="col-md-12 col-12 mb--15">
-                                    <label for="email">Full Name</label>
+                                    <label for="email">Nombre completo</label>
                                     <input 
                                         className="mb-0 form-control" 
                                         type="text" id="name"
-                                        placeholder="Enter your full name"
+                                        placeholder="Juan, Pedro, Ana...."
                                     />
                                 </div>
                                 <div className="col-12 mb--20">
@@ -24,32 +24,48 @@ const Registro = () => {
                                         className="mb-0 form-control" 
                                         type="email" 
                                         id="email" 
-                                        placeholder="Enter Your Email Address Here.."
+                                        placeholder="email@email.com"
+                                    />
+                                </div>
+                                <div class="col-6 mb--20">
+                                    <label>Yo voy a ?</label>
+                                    <select class="nice-select">
+                                        <option>Comprar</option>
+                                        <option>Vender y comprar</option>
+                                    </select>
+                                </div>
+                                <div className="col-6 mb--20">
+                                    <label for="email">NickName</label>
+                                    <input 
+                                        className="mb-0 form-control" 
+                                        type="email" 
+                                        id="email" 
+                                        placeholder="Ej: Juan89W"
                                     />
                                 </div>
                                 <div className="col-lg-6 mb--20">
-                                    <label for="password">Password</label>
+                                    <label for="password">Contraseña</label>
                                     <input 
                                         className="mb-0 form-control" 
                                         type="password" 
                                         id="password" 
-                                        placeholder="Enter your password"
+                                        placeholder="*******"
                                     />
                                 </div>
                                 <div className="col-lg-6 mb--20">
-                                    <label for="password">Repeat Password</label>
+                                    <label for="password">Repita la contraseña</label>
                                     <input 
                                         className="mb-0 form-control" 
                                         type="password" 
                                         id="repeat-password" 
-                                        placeholder="Repeat your password"
+                                        placeholder="*******"
                                     />
                                 </div>
-                                <div className="col-md-12">
+                                <div className="col-md-12 div-btn-submit">
                                     <a 
                                         href="!#" 
                                         className="btn btn-outlined"
-                                    >Register</a>
+                                    >Registrarse</a>
                                 </div>
                             </div>
                         </div>

@@ -384,6 +384,7 @@ color: #fff;
 .content-panel-perfil{
     margin-top: 50px;
     margin-bottom: 40px;
+    overflow: hidden;
 }
 .div-btn-submit{
     text-align: center;
@@ -424,21 +425,21 @@ color: #fff;
   .login-form .nice-select {
     width: 100%;
     background-color: transparent;
-    border: 1px solid #565f69;
+    border: 1px solid #ced4da;
     border-radius: 0;
+    border-radius: .4rem;
     line-height: 23px;
-    padding: 10px 20px;
-    font-size: 14px;
-    height: 45px;
-    color: #d4d4d4;
-    margin-bottom: 15px;
+    padding: .375rem .75rem;
+    font-size: 12px;
+    height: 40px;
+    color: #7b7b7b;
   }
   .login-form .nice-select::after {
     width: 6px;
     height: 6px;
     border-width: 1px;
     right: 20px;
-    border-color: #565f69;
+    border-color: #62ab00;
   }
   .login-form .nice-select .current {
     color: #555555;
@@ -453,7 +454,7 @@ color: #fff;
     color: #7b7b7b;
     font-size: 13px;
   }
-  .login-form input:focus {
+  .login-form input:focus, .login-form select:focus {
     border-color: #62ab00;
     -webkit-box-shadow: none;
             box-shadow: none;
@@ -489,6 +490,12 @@ color: #fff;
     content: "";
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
+  }
+  .login-form legend{
+    
+    font-size: 10px;
+    font-weight: bold;
+
   }
   .login-form .check-box input[type=checkbox] + label::after {
     position: absolute;
@@ -1080,3 +1087,27 @@ color: #fff;
 .nav-item{
   cursor: pointer;
 }
+
+.panel-default {
+  border-color: #ddd;
+}
+.panel {
+  -webkit-box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
+  background-color: #fff;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
+  margin-bottom: 20px;
+}
+
+.panel-heading {
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  color: #333;
+  font-weight: bold;
+}
+
+.panel-body {
+  padding: 15px;
+}
+
