@@ -19,8 +19,8 @@ function App() {
         <Header />
         <Switch>
           <Route exact path="/" component={Inicio} />
-          <Route exact path="/login" component={Login} />
-          <Route exact path="/inicio-sesion" component={Registro} />
+          <Route exact path="/inicio-sesion" component={Login} />
+          <Route exact path="/crear-cuenta" component={Registro} />
           <Route exact path="/mi-cuenta" component={Perfil} />
         </Switch>
       </Provider>  
